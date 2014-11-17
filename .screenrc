@@ -1,0 +1,29 @@
+
+startup_message off
+
+#defflow on # will force screen to process ^S/^Q
+
+deflogin on
+#autodetach off
+
+vbell off
+vbell_msg "   Wuff  ----  Wuff!!  "
+
+#term "screen-256color"
+
+#remove some stupid / dangerous key bindings
+bind k
+bind ^k
+bind .
+bind ^\
+bind \\
+bind ^h
+bind h
+#make them better
+bind 'K' kill
+bind 'I' login on
+bind 'O' login off
+bind '}' history
+activity 'Activity on screen %n ^G'
+
+caption always "%{+b rk}%H%{gk} |%c %{yk}%d.%m.%Y | %{wk} %?%-Lw%?%{bw}%n*%f %t%?(%u)%?%{wk}%?%+Lw%? | %{rk} Load: %l %{wk}"
