@@ -55,7 +55,7 @@ set novisualbell
 set t_vb=
 set tm=500
 
-set encoding=utf8 " Set utf8 as standard encoding and en_US as the standard language
+set encoding=utf-8 " Set utf8 as standard encoding and en_US as the standard language
 
 set wildmenu " Turn on the WiLd menu
 set wcm=<TAB>
@@ -113,6 +113,7 @@ let g:airline_right_sep = '◀'
 let g:airline_linecolumn_prefix = '¶ '
 let g:airline_fugitive_prefix = '⎇ '
 let g:airline_paste_symbol = 'ρ'
+let g:airline#extensions#tabline#enabled = 1
 
 
 " Protect large files from sourcing and other overhead.

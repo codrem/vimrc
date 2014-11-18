@@ -9,7 +9,7 @@ deflogin on
 vbell off
 vbell_msg "   Wuff  ----  Wuff!!  "
 
-#term "screen-256color"
+term "xterm-256color"
 
 #remove some stupid / dangerous key bindings
 bind k
