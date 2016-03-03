@@ -78,6 +78,8 @@ imap <C-t> <ESC>:tabnew<cr>
 map <silent> <F4> :%s/\s\+$//g<CR>
 map <silent> <F9> :runtime! syntax/html.vim<CR>
 
+map <Leader>jt <Esc>:%!json_xs -f json -t json-pretty<CR>
+
 " Remove the Windows ^M - when the encodings gets messed up
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
