@@ -14,7 +14,7 @@ set history=10000 " Sets how many lines of history VIM has to remember
 set undolevels=10000
 
 " Turn backup off BUT save swp file in directory
-set directory=~/.vim/bkps
+set directory=/tmp
 set nobackup
 set nowritebackup
 "set nowb
